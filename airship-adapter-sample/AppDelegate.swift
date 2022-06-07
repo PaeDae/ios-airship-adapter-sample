@@ -6,14 +6,31 @@
 //
 
 import UIKit
+import AirshipGimbalAdapter
+import AirshipKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow()
+                window?.rootViewController = ViewController()
+                window?.makeKeyAndVisible()
+        
+        Airship.takeOff(launchOptions: launchOptions)
+        Airship.push.userPushNotificationsEnabled = true
+        Airship.push.defaultPresentationOptions = [.alert, .badge, .sound]
+        AirshipGimbalAdapter.shared.shouldTrackCustomEntryEvents = true
+        AirshipGimbalAdapter.shared.shouldTrackCustomExitEvents = true
+        AirshipGimbalAdapter.shared.start("YOUR_GIMBAL_API_KEY")
+        AirshipGimbalAdapter.shared.restore()
+        
+        print("My Application Channel ID: \(String(describing: Airship.channel.identifier))")
+            
         return true
     }
 
