@@ -7,23 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B8165E32D791E69710CEDEC /* Pods_airship_adapter_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4563FCE0025B61771BBF73E2 /* Pods_airship_adapter_sample.framework */; };
+		A4A9EC4B2835B45C0004A36C /* GimbalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC4A2835B45C0004A36C /* GimbalService.swift */; };
+		A4A9EC4D2835B4770004A36C /* DefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC4C2835B4770004A36C /* DefaultsService.swift */; };
+		A4A9EC4F2835B4A00004A36C /* Misc Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC4E2835B4A00004A36C /* Misc Extensions.swift */; };
+		A4A9EC512835B4D40004A36C /* GimbalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC502835B4D40004A36C /* GimbalEvent.swift */; };
+		A4A9EC532835B4FC0004A36C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC522835B4FC0004A36C /* Constants.swift */; };
+		A4A9EC552835B6AB0004A36C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC542835B6AB0004A36C /* BaseViewController.swift */; };
 		A4CF7C7528344CD300DB4ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C7428344CD300DB4ED9 /* AppDelegate.swift */; };
 		A4CF7C7728344CD300DB4ED9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C7628344CD300DB4ED9 /* SceneDelegate.swift */; };
 		A4CF7C7928344CD300DB4ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C7828344CD300DB4ED9 /* ViewController.swift */; };
-		A4CF7C7C28344CD300DB4ED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CF7C7A28344CD300DB4ED9 /* Main.storyboard */; };
 		A4CF7C7E28344CD500DB4ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CF7C7D28344CD500DB4ED9 /* Assets.xcassets */; };
 		A4CF7C8128344CD500DB4ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CF7C7F28344CD500DB4ED9 /* LaunchScreen.storyboard */; };
+		A4CF7C8928359CE300DB4ED9 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4CF7C8828359CE300DB4ED9 /* AirshipConfig.plist */; };
+		A4CF7C8B2835A4FD00DB4ED9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C8A2835A4FD00DB4ED9 /* MainView.swift */; };
+		A4CF7C8D2835A59400DB4ED9 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C8C2835A59400DB4ED9 /* UIExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		127920D7E6154CDABEF00CD6 /* Pods-airship-adapter-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airship-adapter-sample.debug.xcconfig"; path = "Target Support Files/Pods-airship-adapter-sample/Pods-airship-adapter-sample.debug.xcconfig"; sourceTree = "<group>"; };
+		4563FCE0025B61771BBF73E2 /* Pods_airship_adapter_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_airship_adapter_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0AA8C9876353BA6509A17D /* Pods-airship-adapter-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airship-adapter-sample.release.xcconfig"; path = "Target Support Files/Pods-airship-adapter-sample/Pods-airship-adapter-sample.release.xcconfig"; sourceTree = "<group>"; };
+		A4A9EC4A2835B45C0004A36C /* GimbalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimbalService.swift; sourceTree = "<group>"; };
+		A4A9EC4C2835B4770004A36C /* DefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsService.swift; sourceTree = "<group>"; };
+		A4A9EC4E2835B4A00004A36C /* Misc Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Misc Extensions.swift"; sourceTree = "<group>"; };
+		A4A9EC502835B4D40004A36C /* GimbalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimbalEvent.swift; sourceTree = "<group>"; };
+		A4A9EC522835B4FC0004A36C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4A9EC542835B6AB0004A36C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A4A9EC562836F9D60004A36C /* airship-adapter-sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "airship-adapter-sample.entitlements"; sourceTree = "<group>"; };
 		A4CF7C7128344CD300DB4ED9 /* airship-adapter-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "airship-adapter-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CF7C7428344CD300DB4ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4CF7C7628344CD300DB4ED9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A4CF7C7828344CD300DB4ED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A4CF7C7B28344CD300DB4ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4CF7C7D28344CD500DB4ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4CF7C8028344CD500DB4ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4CF7C8228344CD500DB4ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CF7C8828359CE300DB4ED9 /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		A4CF7C8A2835A4FD00DB4ED9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A4CF7C8C2835A59400DB4ED9 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8165E32D791E69710CEDEC /* Pods_airship_adapter_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		537392D47B05990A58C6038F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127920D7E6154CDABEF00CD6 /* Pods-airship-adapter-sample.debug.xcconfig */,
+				7C0AA8C9876353BA6509A17D /* Pods-airship-adapter-sample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D68917349334810E69CA279 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4563FCE0025B61771BBF73E2 /* Pods_airship_adapter_sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4CF7C6828344CD300DB4ED9 = {
 			isa = PBXGroup;
 			children = (
 				A4CF7C7328344CD300DB4ED9 /* airship-adapter-sample */,
 				A4CF7C7228344CD300DB4ED9 /* Products */,
+				537392D47B05990A58C6038F /* Pods */,
+				8D68917349334810E69CA279 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +97,22 @@
 		A4CF7C7328344CD300DB4ED9 /* airship-adapter-sample */ = {
 			isa = PBXGroup;
 			children = (
+				A4A9EC562836F9D60004A36C /* airship-adapter-sample.entitlements */,
 				A4CF7C7428344CD300DB4ED9 /* AppDelegate.swift */,
 				A4CF7C7628344CD300DB4ED9 /* SceneDelegate.swift */,
 				A4CF7C7828344CD300DB4ED9 /* ViewController.swift */,
-				A4CF7C7A28344CD300DB4ED9 /* Main.storyboard */,
 				A4CF7C7D28344CD500DB4ED9 /* Assets.xcassets */,
 				A4CF7C7F28344CD500DB4ED9 /* LaunchScreen.storyboard */,
 				A4CF7C8228344CD500DB4ED9 /* Info.plist */,
+				A4CF7C8828359CE300DB4ED9 /* AirshipConfig.plist */,
+				A4CF7C8A2835A4FD00DB4ED9 /* MainView.swift */,
+				A4CF7C8C2835A59400DB4ED9 /* UIExtensions.swift */,
+				A4A9EC4A2835B45C0004A36C /* GimbalService.swift */,
+				A4A9EC4C2835B4770004A36C /* DefaultsService.swift */,
+				A4A9EC4E2835B4A00004A36C /* Misc Extensions.swift */,
+				A4A9EC502835B4D40004A36C /* GimbalEvent.swift */,
+				A4A9EC522835B4FC0004A36C /* Constants.swift */,
+				A4A9EC542835B6AB0004A36C /* BaseViewController.swift */,
 			);
 			path = "airship-adapter-sample";
 			sourceTree = "<group>";
@@ -74,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4CF7C8528344CD500DB4ED9 /* Build configuration list for PBXNativeTarget "airship-adapter-sample" */;
 			buildPhases = (
+				35FDC23BE97E66CD6D9A0E0E /* [CP] Check Pods Manifest.lock */,
 				A4CF7C6D28344CD300DB4ED9 /* Sources */,
 				A4CF7C6E28344CD300DB4ED9 /* Frameworks */,
 				A4CF7C6F28344CD300DB4ED9 /* Resources */,
+				0FA4D5C6F8C676E7006FEF5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +177,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CF7C8928359CE300DB4ED9 /* AirshipConfig.plist in Resources */,
 				A4CF7C8128344CD500DB4ED9 /* LaunchScreen.storyboard in Resources */,
 				A4CF7C7E28344CD500DB4ED9 /* Assets.xcassets in Resources */,
-				A4CF7C7C28344CD300DB4ED9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FA4D5C6F8C676E7006FEF5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-airship-adapter-sample/Pods-airship-adapter-sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-airship-adapter-sample/Pods-airship-adapter-sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-airship-adapter-sample/Pods-airship-adapter-sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35FDC23BE97E66CD6D9A0E0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-airship-adapter-sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A4CF7C6D28344CD300DB4ED9 /* Sources */ = {
@@ -139,7 +233,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4CF7C7928344CD300DB4ED9 /* ViewController.swift in Sources */,
+				A4CF7C8B2835A4FD00DB4ED9 /* MainView.swift in Sources */,
+				A4A9EC552835B6AB0004A36C /* BaseViewController.swift in Sources */,
 				A4CF7C7528344CD300DB4ED9 /* AppDelegate.swift in Sources */,
+				A4A9EC4B2835B45C0004A36C /* GimbalService.swift in Sources */,
+				A4A9EC4F2835B4A00004A36C /* Misc Extensions.swift in Sources */,
+				A4A9EC532835B4FC0004A36C /* Constants.swift in Sources */,
+				A4CF7C8D2835A59400DB4ED9 /* UIExtensions.swift in Sources */,
+				A4A9EC4D2835B4770004A36C /* DefaultsService.swift in Sources */,
+				A4A9EC512835B4D40004A36C /* GimbalEvent.swift in Sources */,
 				A4CF7C7728344CD300DB4ED9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +249,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A4CF7C7A28344CD300DB4ED9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4CF7C7B28344CD300DB4ED9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A4CF7C7F28344CD500DB4ED9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,19 +376,26 @@
 		};
 		A4CF7C8628344CD500DB4ED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127920D7E6154CDABEF00CD6 /* Pods-airship-adapter-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "airship-adapter-sample/airship-adapter-sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ETG9R4M5P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "airship-adapter-sample/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We require bluetooth for beacon detection";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "We require bluetooth for beacon detection";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We require location permissions to detect place arrivals and exits";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We require location permissions to detect place arrivals and exits";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,19 +411,26 @@
 		};
 		A4CF7C8728344CD500DB4ED9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0AA8C9876353BA6509A17D /* Pods-airship-adapter-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "airship-adapter-sample/airship-adapter-sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ETG9R4M5P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "airship-adapter-sample/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We require bluetooth for beacon detection";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "We require bluetooth for beacon detection";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We require location permissions to detect place arrivals and exits";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We require location permissions to detect place arrivals and exits";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
