@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow()
-                window?.rootViewController = ViewController()
+                window?.rootViewController = EventsViewController()
                 window?.makeKeyAndVisible()
         
         Airship.takeOff(launchOptions: launchOptions)
@@ -47,7 +47,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse) async {
+        self.notifyAndSavePlaceEventWith(
+            firstDescriptor: "Background Notification Received",
+            secondDescriptor: Date().toFormattedLocalString()
+        )
+    }
+    
+    private func notifyAndSavePlaceEventWith(firstDescriptor: String, secondDescriptor: String) {
+        let newEvent = AdapterEvent(firstDescriptor: firstDescriptor, secondDescriptor: secondDescriptor)
+        DefaultsService.shared().save(event: newEvent)
+        
+        NotificationCenter.default.post(name: .didReceiveNewGimbalEvent, object: nil)
+    }
+}
 
-
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+    ) {
+        self.notifyAndSavePlaceEventWith(
+            firstDescriptor: "Foreground Notification Received",
+            secondDescriptor: Date().toFormattedLocalString()
+        )
+        completionHandler([.banner, .list, .sound])
+    }
 }
 

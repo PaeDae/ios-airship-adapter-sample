@@ -8,19 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1B8165E32D791E69710CEDEC /* Pods_airship_adapter_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4563FCE0025B61771BBF73E2 /* Pods_airship_adapter_sample.framework */; };
+		A46695C02852B04500F87C16 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46695BF2852B04500F87C16 /* EventsView.swift */; };
+		A46695C22852B0B500F87C16 /* EventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46695C12852B0B500F87C16 /* EventsPresenter.swift */; };
+		A46695C42852B0D600F87C16 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46695C32852B0D600F87C16 /* EventsViewController.swift */; };
+		A46695C62852B11100F87C16 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46695C52852B11100F87C16 /* DependencyInjector.swift */; };
+		A46695C82852B15500F87C16 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46695C72852B15500F87C16 /* LabelCell.swift */; };
+		A46695CA2852B17100F87C16 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46695C92852B17100F87C16 /* BaseTableViewCell.swift */; };
 		A4A9EC4B2835B45C0004A36C /* GimbalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC4A2835B45C0004A36C /* GimbalService.swift */; };
 		A4A9EC4D2835B4770004A36C /* DefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC4C2835B4770004A36C /* DefaultsService.swift */; };
 		A4A9EC4F2835B4A00004A36C /* Misc Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC4E2835B4A00004A36C /* Misc Extensions.swift */; };
-		A4A9EC512835B4D40004A36C /* GimbalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC502835B4D40004A36C /* GimbalEvent.swift */; };
-		A4A9EC532835B4FC0004A36C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC522835B4FC0004A36C /* Constants.swift */; };
+		A4A9EC512835B4D40004A36C /* AdapterEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC502835B4D40004A36C /* AdapterEvent.swift */; };
 		A4A9EC552835B6AB0004A36C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9EC542835B6AB0004A36C /* BaseViewController.swift */; };
 		A4CF7C7528344CD300DB4ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C7428344CD300DB4ED9 /* AppDelegate.swift */; };
 		A4CF7C7728344CD300DB4ED9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C7628344CD300DB4ED9 /* SceneDelegate.swift */; };
-		A4CF7C7928344CD300DB4ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C7828344CD300DB4ED9 /* ViewController.swift */; };
 		A4CF7C7E28344CD500DB4ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CF7C7D28344CD500DB4ED9 /* Assets.xcassets */; };
 		A4CF7C8128344CD500DB4ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CF7C7F28344CD500DB4ED9 /* LaunchScreen.storyboard */; };
 		A4CF7C8928359CE300DB4ED9 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4CF7C8828359CE300DB4ED9 /* AirshipConfig.plist */; };
-		A4CF7C8B2835A4FD00DB4ED9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C8A2835A4FD00DB4ED9 /* MainView.swift */; };
 		A4CF7C8D2835A59400DB4ED9 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF7C8C2835A59400DB4ED9 /* UIExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,22 +31,25 @@
 		127920D7E6154CDABEF00CD6 /* Pods-airship-adapter-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airship-adapter-sample.debug.xcconfig"; path = "Target Support Files/Pods-airship-adapter-sample/Pods-airship-adapter-sample.debug.xcconfig"; sourceTree = "<group>"; };
 		4563FCE0025B61771BBF73E2 /* Pods_airship_adapter_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_airship_adapter_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C0AA8C9876353BA6509A17D /* Pods-airship-adapter-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-airship-adapter-sample.release.xcconfig"; path = "Target Support Files/Pods-airship-adapter-sample/Pods-airship-adapter-sample.release.xcconfig"; sourceTree = "<group>"; };
+		A46695BF2852B04500F87C16 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		A46695C12852B0B500F87C16 /* EventsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsPresenter.swift; sourceTree = "<group>"; };
+		A46695C32852B0D600F87C16 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		A46695C52852B11100F87C16 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		A46695C72852B15500F87C16 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		A46695C92852B17100F87C16 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		A4A9EC4A2835B45C0004A36C /* GimbalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimbalService.swift; sourceTree = "<group>"; };
 		A4A9EC4C2835B4770004A36C /* DefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsService.swift; sourceTree = "<group>"; };
 		A4A9EC4E2835B4A00004A36C /* Misc Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Misc Extensions.swift"; sourceTree = "<group>"; };
-		A4A9EC502835B4D40004A36C /* GimbalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimbalEvent.swift; sourceTree = "<group>"; };
-		A4A9EC522835B4FC0004A36C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4A9EC502835B4D40004A36C /* AdapterEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterEvent.swift; sourceTree = "<group>"; };
 		A4A9EC542835B6AB0004A36C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A4A9EC562836F9D60004A36C /* airship-adapter-sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "airship-adapter-sample.entitlements"; sourceTree = "<group>"; };
 		A4CF7C7128344CD300DB4ED9 /* airship-adapter-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "airship-adapter-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CF7C7428344CD300DB4ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4CF7C7628344CD300DB4ED9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4CF7C7828344CD300DB4ED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4CF7C7D28344CD500DB4ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4CF7C8028344CD500DB4ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4CF7C8228344CD500DB4ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CF7C8828359CE300DB4ED9 /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
-		A4CF7C8A2835A4FD00DB4ED9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A4CF7C8C2835A59400DB4ED9 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +82,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A46695CB2853E97F00F87C16 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				A46695BF2852B04500F87C16 /* EventsView.swift */,
+				A46695C12852B0B500F87C16 /* EventsPresenter.swift */,
+				A46695C32852B0D600F87C16 /* EventsViewController.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		A46695CC2853E9DE00F87C16 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A46695C52852B11100F87C16 /* DependencyInjector.swift */,
+				A4A9EC4A2835B45C0004A36C /* GimbalService.swift */,
+				A4A9EC4C2835B4770004A36C /* DefaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A46695CD2853EA0C00F87C16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4CF7C8C2835A59400DB4ED9 /* UIExtensions.swift */,
+				A4A9EC4E2835B4A00004A36C /* Misc Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A46695CE2853EA1B00F87C16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4A9EC502835B4D40004A36C /* AdapterEvent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A46695CF2853EA3200F87C16 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A4A9EC542835B6AB0004A36C /* BaseViewController.swift */,
+				A46695C92852B17100F87C16 /* BaseTableViewCell.swift */,
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
+		A46695D02853EA4900F87C16 /* Generic Views */ = {
+			isa = PBXGroup;
+			children = (
+				A46695C72852B15500F87C16 /* LabelCell.swift */,
+			);
+			path = "Generic Views";
+			sourceTree = "<group>";
+		};
 		A4CF7C6828344CD300DB4ED9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,22 +157,19 @@
 		A4CF7C7328344CD300DB4ED9 /* airship-adapter-sample */ = {
 			isa = PBXGroup;
 			children = (
-				A4A9EC562836F9D60004A36C /* airship-adapter-sample.entitlements */,
+				A46695D02853EA4900F87C16 /* Generic Views */,
+				A46695CF2853EA3200F87C16 /* Base Classes */,
+				A46695CE2853EA1B00F87C16 /* Models */,
+				A46695CD2853EA0C00F87C16 /* Extensions */,
+				A46695CC2853E9DE00F87C16 /* Services */,
+				A46695CB2853E97F00F87C16 /* Events */,
 				A4CF7C7428344CD300DB4ED9 /* AppDelegate.swift */,
 				A4CF7C7628344CD300DB4ED9 /* SceneDelegate.swift */,
-				A4CF7C7828344CD300DB4ED9 /* ViewController.swift */,
+				A4A9EC562836F9D60004A36C /* airship-adapter-sample.entitlements */,
 				A4CF7C7D28344CD500DB4ED9 /* Assets.xcassets */,
 				A4CF7C7F28344CD500DB4ED9 /* LaunchScreen.storyboard */,
 				A4CF7C8228344CD500DB4ED9 /* Info.plist */,
 				A4CF7C8828359CE300DB4ED9 /* AirshipConfig.plist */,
-				A4CF7C8A2835A4FD00DB4ED9 /* MainView.swift */,
-				A4CF7C8C2835A59400DB4ED9 /* UIExtensions.swift */,
-				A4A9EC4A2835B45C0004A36C /* GimbalService.swift */,
-				A4A9EC4C2835B4770004A36C /* DefaultsService.swift */,
-				A4A9EC4E2835B4A00004A36C /* Misc Extensions.swift */,
-				A4A9EC502835B4D40004A36C /* GimbalEvent.swift */,
-				A4A9EC522835B4FC0004A36C /* Constants.swift */,
-				A4A9EC542835B6AB0004A36C /* BaseViewController.swift */,
 			);
 			path = "airship-adapter-sample";
 			sourceTree = "<group>";
@@ -232,17 +289,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4CF7C7928344CD300DB4ED9 /* ViewController.swift in Sources */,
-				A4CF7C8B2835A4FD00DB4ED9 /* MainView.swift in Sources */,
+				A46695C62852B11100F87C16 /* DependencyInjector.swift in Sources */,
 				A4A9EC552835B6AB0004A36C /* BaseViewController.swift in Sources */,
 				A4CF7C7528344CD300DB4ED9 /* AppDelegate.swift in Sources */,
 				A4A9EC4B2835B45C0004A36C /* GimbalService.swift in Sources */,
+				A46695C22852B0B500F87C16 /* EventsPresenter.swift in Sources */,
 				A4A9EC4F2835B4A00004A36C /* Misc Extensions.swift in Sources */,
-				A4A9EC532835B4FC0004A36C /* Constants.swift in Sources */,
 				A4CF7C8D2835A59400DB4ED9 /* UIExtensions.swift in Sources */,
+				A46695C82852B15500F87C16 /* LabelCell.swift in Sources */,
 				A4A9EC4D2835B4770004A36C /* DefaultsService.swift in Sources */,
-				A4A9EC512835B4D40004A36C /* GimbalEvent.swift in Sources */,
+				A46695CA2852B17100F87C16 /* BaseTableViewCell.swift in Sources */,
+				A4A9EC512835B4D40004A36C /* AdapterEvent.swift in Sources */,
+				A46695C42852B0D600F87C16 /* EventsViewController.swift in Sources */,
 				A4CF7C7728344CD300DB4ED9 /* SceneDelegate.swift in Sources */,
+				A46695C02852B04500F87C16 /* EventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

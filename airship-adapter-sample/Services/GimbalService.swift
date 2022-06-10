@@ -76,7 +76,7 @@ extension GimbalService: PlaceManagerDelegate {
     }
     
     private func notifyAndSavePlaceEventWith(firstDescriptor: String, secondDescriptor: String) {
-        let newEvent = GimbalEvent(firstDescriptor: firstDescriptor, secondDescriptor: secondDescriptor)
+        let newEvent = AdapterEvent(firstDescriptor: firstDescriptor, secondDescriptor: secondDescriptor)
         self.defaultsService.save(event: newEvent)
         
         NotificationCenter.default.post(name: .didReceiveNewGimbalEvent, object: nil)

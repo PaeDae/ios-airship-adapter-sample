@@ -18,10 +18,10 @@ class DefaultsService {
         return sharedInstance
     }
     
-    private(set) var gimbalEvents: [GimbalEvent] {
+    private(set) var gimbalEvents: [AdapterEvent] {
         get {
             guard let cachedEvents = self.defaults.value(forKey: eventsKey) as? Data,
-                  let decodedEvents = try? PropertyListDecoder().decode(Array<GimbalEvent>.self, from: cachedEvents) else {
+                  let decodedEvents = try? PropertyListDecoder().decode(Array<AdapterEvent>.self, from: cachedEvents) else {
                 return []
             }
             
@@ -34,8 +34,8 @@ class DefaultsService {
     }
     
     // Events
-    func save(event: GimbalEvent) {
-        var updatedEvents: [GimbalEvent] = []
+    func save(event: AdapterEvent) {
+        var updatedEvents: [AdapterEvent] = []
         updatedEvents.append(event)
         updatedEvents.append(contentsOf: self.gimbalEvents)
         self.gimbalEvents = updatedEvents

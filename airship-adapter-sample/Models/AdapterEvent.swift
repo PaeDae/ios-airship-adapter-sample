@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GimbalEvent: Codable {
+struct AdapterEvent: Codable {
     let firstDescriptor: String
     let secondDescriptor: String
     init(firstDescriptor: String, secondDescriptor: String) {
