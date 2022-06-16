@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Airship.push.defaultPresentationOptions = [.alert, .badge, .sound]
         AirshipGimbalAdapter.shared.shouldTrackCustomEntryEvents = true
         AirshipGimbalAdapter.shared.shouldTrackCustomExitEvents = true
+        AirshipGimbalAdapter.shared.shouldTrackRegionEvents = true
         AirshipGimbalAdapter.shared.start("YOUR_GIMBAL_API_KEY")
         AirshipGimbalAdapter.shared.restore()
         
