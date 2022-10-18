@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AirshipGimbalAdapter
+import GimbalAirshipAdapter
 import AirshipKit
 
 @main
@@ -24,11 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Airship.takeOff(launchOptions: launchOptions)
         Airship.push.userPushNotificationsEnabled = true
         Airship.push.defaultPresentationOptions = [.alert, .badge, .sound]
-        AirshipGimbalAdapter.shared.shouldTrackCustomEntryEvents = true
-        AirshipGimbalAdapter.shared.shouldTrackCustomExitEvents = true
-        AirshipGimbalAdapter.shared.shouldTrackRegionEvents = true
-        AirshipGimbalAdapter.shared.start("YOUR_GIMBAL_API_KEY")
-        AirshipGimbalAdapter.shared.restore()
+        AirshipAdapter.shared.shouldTrackCustomEntryEvents = true
+        AirshipAdapter.shared.shouldTrackCustomExitEvents = false
+        AirshipAdapter.shared.shouldTrackRegionEvents = true
+        AirshipAdapter.shared.start("YOUR_GIMBAL_API_KEY")
+        AirshipAdapter.shared.restore()
         
         print("My Application Channel ID: \(String(describing: Airship.channel.identifier))")
             
